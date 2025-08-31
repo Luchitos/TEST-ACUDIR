@@ -11,6 +11,12 @@ using Application.Mapping;
 using Application.Services;
 using Data.Repository;
 using Acudir.Test.Apis.Middlewares;
+using Serilog;
+using Acudir.Test.Apis.Health;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using System.Text.Json;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -88,12 +94,33 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(key)
     };
 });
+builder.Services.AddHealthChecks()
+    .AddCheck("self", () => HealthCheckResult.Healthy())
+    .AddCheck<TestJsonHealthCheck>("testjson", tags: new[] { "ready" });
 
 builder.Services.AddScoped<IServicePersona, ServicePersona>();
+
+builder.Host.UseSerilog((ctx, lc) =>
+{
+    lc.ReadFrom.Configuration(ctx.Configuration)
+      .Enrich.FromLogContext();
+});
 var app = builder.Build();
 
 
 IWebHostEnvironment environment = app.Environment;
+app.UseMiddleware<CorrelationIdMiddleware>();
+app.UseSerilogRequestLogging(opts =>
+{
+    opts.EnrichDiagnosticContext = (diagCtx, http) =>
+    {
+        if (http.Items.TryGetValue(CorrelationIdMiddleware.HeaderName, out var cid) && cid is string s)
+            diagCtx.Set("CorrelationId", s);
+
+        diagCtx.Set("RequestPath", http.Request.Path);
+        diagCtx.Set("UserAgent", http.Request.Headers.UserAgent.ToString());
+    };
+});
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 // Configure the HTTP request pipeline.
@@ -114,6 +141,33 @@ app.Use(async (context, next) =>
     }
     await next();
 });
+
+app.MapHealthChecks("/health", new HealthCheckOptions
+{
+    Predicate = r => r.Name == "self"
+});
+
+app.MapHealthChecks("/health/ready", new HealthCheckOptions
+{
+    Predicate = r => r.Tags.Contains("ready"),
+    ResponseWriter = async (ctx, rpt) =>
+    {
+        ctx.Response.ContentType = "application/json";
+        var payload = new
+        {
+            status = rpt.Status.ToString(),
+            checks = rpt.Entries.Select(e => new
+            {
+                name = e.Key,
+                status = e.Value.Status.ToString(),
+                error = e.Value.Exception?.Message,
+                description = e.Value.Description
+            })
+        };
+        await ctx.Response.WriteAsync(JsonSerializer.Serialize(payload));
+    }
+});
+
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

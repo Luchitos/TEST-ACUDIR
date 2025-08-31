@@ -22,3 +22,7 @@
 project.nuget.cache
 *.nuget.g.props
 *.nuget.g.targets
+Application/bin/Debug/net6.0/
+Application/obj/Debug/net6.0/
+UnitTest/obj/
+UnitTest/obj/project.nuget.cache
