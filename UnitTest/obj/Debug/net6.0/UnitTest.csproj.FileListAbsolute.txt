@@ -1,145 +1,290 @@
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\.msCoverageSourceRootsMapping_UnitTest
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\testhost.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Acudir.Test.Apis.deps.json
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Acudir.Test.Apis.runtimeconfig.json
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Acudir.Test.Apis.staticwebassets.endpoints.json
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Acudir.Test.Apis.exe
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\testhost.exe
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\xunit.runner.visualstudio.testadapter.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\xunit.runner.reporters.netcoreapp10.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\xunit.runner.utility.netcoreapp10.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\appsettings.json
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Test.json
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\UnitTest.deps.json
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\UnitTest.runtimeconfig.json
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\UnitTest.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\UnitTest.pdb
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\AutoMapper.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Castle.Core.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\dotenv.net.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\MediatR.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.OpenApi.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.TestPlatform.CoreUtilities.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.TestPlatform.CommunicationUtilities.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.TestPlatform.CrossPlatEngine.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.TestPlatform.Utilities.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Common.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Moq.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ServiceStack.Interfaces.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\xunit.abstractions.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\xunit.assert.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\xunit.core.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\xunit.execution.dotnet.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Acudir.Test.Apis.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Application.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Data.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Domain.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Acudir.Test.Apis.pdb
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Acudir.Test.Apis.xml
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Domain.pdb
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Application.pdb
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\bin\Debug\net6.0\Data.pdb
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\obj\Debug\net6.0\UnitTest.csproj.AssemblyReference.cache
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\obj\Debug\net6.0\UnitTest.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\obj\Debug\net6.0\UnitTest.AssemblyInfoInputs.cache
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\obj\Debug\net6.0\UnitTest.AssemblyInfo.cs
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\obj\Debug\net6.0\UnitTest.csproj.CoreCompileInputs.cache
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\obj\Debug\net6.0\UnitTest.sourcelink.json
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\obj\Debug\net6.0\UnitTest.csproj.Up2Date
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\obj\Debug\net6.0\UnitTest.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\obj\Debug\net6.0\refint\UnitTest.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\obj\Debug\net6.0\UnitTest.pdb
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\obj\Debug\net6.0\UnitTest.genruntimeconfig.cache
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\UnitTest\obj\Debug\net6.0\ref\UnitTest.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/.msCoverageSourceRootsMapping_UnitTest
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/testhost.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.deps.json
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.runtimeconfig.json
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/appsettings.Development.json
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.staticwebassets.endpoints.json
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.exe
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/testhost.exe
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.runner.visualstudio.testadapter.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.runner.reporters.netcoreapp10.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.runner.utility.netcoreapp10.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/appsettings.json
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Test.json
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/UnitTest.deps.json
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/UnitTest.runtimeconfig.json
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/UnitTest.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/UnitTest.pdb
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/AutoMapper.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Castle.Core.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/dotenv.net.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/MediatR.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.Caching.Abstractions.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.Logging.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.OpenApi.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.TestPlatform.CoreUtilities.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.TestPlatform.PlatformAbstractions.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.TestPlatform.CommunicationUtilities.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.TestPlatform.CrossPlatEngine.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.TestPlatform.Utilities.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.VisualStudio.TestPlatform.Common.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Moq.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Newtonsoft.Json.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ServiceStack.Interfaces.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.abstractions.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.assert.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.core.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.execution.dotnet.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Application.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Data.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Domain.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.pdb
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.xml
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Domain.pdb
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Application.pdb
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Data.pdb
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.csproj.AssemblyReference.cache
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.AssemblyInfoInputs.cache
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.AssemblyInfo.cs
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.csproj.CoreCompileInputs.cache
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.sourcelink.json
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.csproj.Up2Date
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/refint/UnitTest.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.pdb
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.genruntimeconfig.cache
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/ref/UnitTest.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/.msCoverageSourceRootsMapping_UnitTest
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.deps.json
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.runtimeconfig.json
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/appsettings.Development.json
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.staticwebassets.endpoints.json
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.runner.visualstudio.testadapter.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.runner.reporters.netcoreapp10.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.runner.utility.netcoreapp10.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/appsettings.json
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Test.json
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/UnitTest.deps.json
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/UnitTest.runtimeconfig.json
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/UnitTest.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/UnitTest.pdb
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/AutoMapper.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Castle.Core.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/dotenv.net.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/FluentValidation.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/MediatR.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.Logging.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.TestPlatform.CoreUtilities.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.TestPlatform.PlatformAbstractions.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.TestPlatform.CommunicationUtilities.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.TestPlatform.CrossPlatEngine.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.TestPlatform.Utilities.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.VisualStudio.TestPlatform.Common.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/testhost.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Moq.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ServiceStack.Interfaces.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.abstractions.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.assert.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.core.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.execution.dotnet.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Application.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Data.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Domain.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.pdb
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.xml
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Domain.pdb
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Application.pdb
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Data.pdb
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.csproj.AssemblyReference.cache
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.AssemblyInfoInputs.cache
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.AssemblyInfo.cs
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.csproj.CoreCompileInputs.cache
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.sourcelink.json
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.csproj.Up2Date
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/refint/UnitTest.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.pdb
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.genruntimeconfig.cache
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/ref/UnitTest.dll

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "827hkMBEH0Y=",
+  "dgSpecHash": "D1liW3CYx8k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Micaela Sielas\\source\\repos\\TEST-ACUDIR\\Domain\\Domain.csproj",
+  "projectFilePath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Micaela Sielas\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+    "/Users/luciano/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512",
+    "/Users/luciano/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/luciano/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }

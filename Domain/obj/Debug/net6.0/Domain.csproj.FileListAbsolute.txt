@@ -1,13 +1,26 @@
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Domain\bin\Debug\net6.0\Domain.deps.json
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Domain\bin\Debug\net6.0\Domain.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Domain\bin\Debug\net6.0\Domain.pdb
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Domain\obj\Debug\net6.0\Domain.sourcelink.json
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Domain\obj\Debug\net6.0\Domain.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Domain\obj\Debug\net6.0\refint\Domain.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Domain\obj\Debug\net6.0\Domain.pdb
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Domain\obj\Debug\net6.0\ref\Domain.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Domain/bin/Debug/net6.0/Domain.deps.json
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Domain/bin/Debug/net6.0/Domain.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Domain/bin/Debug/net6.0/Domain.pdb
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.csproj.AssemblyReference.cache
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.AssemblyInfoInputs.cache
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.AssemblyInfo.cs
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.csproj.CoreCompileInputs.cache
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.sourcelink.json
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Domain/obj/Debug/net6.0/refint/Domain.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.pdb
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Domain/obj/Debug/net6.0/ref/Domain.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/bin/Debug/net6.0/Domain.deps.json
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/bin/Debug/net6.0/Domain.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/bin/Debug/net6.0/Domain.pdb
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.csproj.AssemblyReference.cache
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.AssemblyInfoInputs.cache
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.AssemblyInfo.cs
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.csproj.CoreCompileInputs.cache
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.sourcelink.json
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/obj/Debug/net6.0/refint/Domain.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/obj/Debug/net6.0/Domain.pdb
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/obj/Debug/net6.0/ref/Domain.dll

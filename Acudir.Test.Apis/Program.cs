@@ -10,6 +10,7 @@ using ServiceStack;
 using Application.Mapping;
 using Application.Services;
 using Data.Repository;
+using Acudir.Test.Apis.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,7 +22,7 @@ var jwtSecretKey = Environment.GetEnvironmentVariable("JWT_SECRET_KEY");
 
 if (string.IsNullOrEmpty(jwtSecretKey))
 {
-    throw new InvalidOperationException("JWT_SECRET_KEY no está configurado. Asegúrate de configurar la clave secreta en el archivo .env.");
+    throw new InvalidOperationException("JWT_SECRET_KEY no estï¿½ configurado. Asegï¿½rate de configurar la clave secreta en el archivo .env.");
 }
 
 var key = Encoding.ASCII.GetBytes(jwtSecretKey);
@@ -91,7 +92,9 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddScoped<IServicePersona, ServicePersona>();
 var app = builder.Build();
 
+
 IWebHostEnvironment environment = app.Environment;
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

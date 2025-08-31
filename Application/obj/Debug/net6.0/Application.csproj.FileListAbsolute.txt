@@ -1,16 +1,32 @@
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\bin\Debug\net6.0\Application.deps.json
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\bin\Debug\net6.0\Application.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\bin\Debug\net6.0\Application.pdb
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\bin\Debug\net6.0\Domain.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\bin\Debug\net6.0\Domain.pdb
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\obj\Debug\net6.0\Application.sourcelink.json
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\obj\Debug\net6.0\Applicat.44B5EDA2.Up2Date
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\obj\Debug\net6.0\Application.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\obj\Debug\net6.0\refint\Application.dll
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\obj\Debug\net6.0\Application.pdb
-C:\Users\Micaela Sielas\source\repos\TEST-ACUDIR\Application\obj\Debug\net6.0\ref\Application.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/bin/Debug/net6.0/Application.deps.json
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/bin/Debug/net6.0/Application.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/bin/Debug/net6.0/Application.pdb
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/bin/Debug/net6.0/Domain.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/bin/Debug/net6.0/Domain.pdb
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.csproj.AssemblyReference.cache
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.AssemblyInfoInputs.cache
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.AssemblyInfo.cs
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.csproj.CoreCompileInputs.cache
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.sourcelink.json
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/obj/Debug/net6.0/Applicat.44B5EDA2.Up2Date
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/obj/Debug/net6.0/refint/Application.dll
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.pdb
+C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/Application/obj/Debug/net6.0/ref/Application.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/bin/Debug/net6.0/Application.deps.json
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/bin/Debug/net6.0/Application.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/bin/Debug/net6.0/Application.pdb
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/bin/Debug/net6.0/Domain.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/bin/Debug/net6.0/Domain.pdb
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.csproj.AssemblyReference.cache
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.AssemblyInfoInputs.cache
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.AssemblyInfo.cs
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.csproj.CoreCompileInputs.cache
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.sourcelink.json
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/obj/Debug/net6.0/Applicat.44B5EDA2.Up2Date
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/obj/Debug/net6.0/refint/Application.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/obj/Debug/net6.0/Application.pdb
+/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/obj/Debug/net6.0/ref/Application.dll

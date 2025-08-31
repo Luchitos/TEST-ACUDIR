@@ -20,7 +20,9 @@
   </ItemGroup>
 
 	<ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="dotenv.net" Version="3.2.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
     <PackageReference Include="MediatR" Version="9.0.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
@@ -29,10 +31,12 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\TEST-ACUDIR\Application\Application.csproj" />
-    <ProjectReference Include="..\..\TEST-ACUDIR\Data\Data.csproj" />
-  </ItemGroup>
+<ItemGroup>
+  <ProjectReference Include="..\Application\Application.csproj" />
+  <ProjectReference Include="..\Domain\Domain.csproj" />
+  <ProjectReference Include="..\Data\Data.csproj" />
+</ItemGroup>
+
 
   <ItemGroup>
     <Content Update="appsettings.json">
