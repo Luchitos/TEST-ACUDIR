@@ -6,3 +6,19 @@
 /Acudir.Test.Apis/bin
 /Acudir.Test.Apis/obj
 .env
+
+# Build artifacts
+[Bb]in/
+[Oo]bj/
+
+# VS/IDE
+.vs/
+*.user
+*.suo
+*.ide
+*.log
+
+# NuGet
+project.nuget.cache
+*.nuget.g.props
+*.nuget.g.targets
