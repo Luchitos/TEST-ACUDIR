@@ -1,6 +1,8 @@
-﻿using Domain.Entidades;
+using Domain.Entidades;
 using Domain.Interfaz;
+
 using Newtonsoft.Json;
+
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;

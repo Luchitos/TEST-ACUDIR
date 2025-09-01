@@ -1,0 +1,32 @@
+root = true
+
+[*.{cs,csx}]
+indent_style = space
+indent_size = 4
+end_of_line = crlf
+charset = utf-8
+insert_final_newline = true
+
+# C# style
+csharp_new_line_before_open_brace = all
+csharp_indent_switch_labels = true
+dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = true
+
+# Naming
+dotnet_naming_rule.private_fields_should_be_camel.severity = suggestion
+dotnet_naming_rule.private_fields_should_be_camel.symbols = private_fields
+dotnet_naming_rule.private_fields_should_be_camel.style = camel_underscore
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+dotnet_naming_style.camel_underscore.capitalization = camel_case
+dotnet_naming_style.camel_underscore.required_prefix = _
+
+# Analyzers
+dotnet_analyzer_diagnostic.category-Style.severity = warning
+dotnet_analyzer_diagnostic.category-Design.severity = warning
+dotnet_analyzer_diagnostic.category-Usage.severity = warning
+
+end_of_line = lf
+charset = utf-8
+insert_final_newline = true

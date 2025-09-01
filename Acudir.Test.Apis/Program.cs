@@ -1,4 +1,3 @@
-using Domain.Interfaz;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -6,7 +5,6 @@ using Microsoft.OpenApi.Models;
 using System.Text;
 using dotenv.net;
 using System.Reflection;
-using ServiceStack;
 using Application.Mapping;
 using Application.Services;
 using Infrastructure;
@@ -18,20 +16,20 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using System.Text.Json;
 
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 // Cargar las variables de entorno desde el archivo .env
 DotEnv.Load();
 
 // Obtener la clave secreta del entorno, o lanzar un error si no se encuentra
-var jwtSecretKey = Environment.GetEnvironmentVariable("JWT_SECRET_KEY");
+string? jwtSecretKey = Environment.GetEnvironmentVariable("JWT_SECRET_KEY");
 
 if (string.IsNullOrEmpty(jwtSecretKey))
 {
     throw new InvalidOperationException("JWT_SECRET_KEY no est� configurado. Aseg�rate de configurar la clave secreta en el archivo .env.");
 }
 
-var key = Encoding.ASCII.GetBytes(jwtSecretKey);
+byte[] key = Encoding.ASCII.GetBytes(jwtSecretKey);
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -65,8 +63,8 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 
-    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    string xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     c.IncludeXmlComments(xmlPath);
 });
 
@@ -106,7 +104,7 @@ builder.Host.UseSerilog((ctx, lc) =>
     lc.ReadFrom.Configuration(ctx.Configuration)
       .Enrich.FromLogContext();
 });
-var app = builder.Build();
+WebApplication app = builder.Build();
 
 
 IWebHostEnvironment environment = app.Environment;
@@ -115,7 +113,7 @@ app.UseSerilogRequestLogging(opts =>
 {
     opts.EnrichDiagnosticContext = (diagCtx, http) =>
     {
-        if (http.Items.TryGetValue(CorrelationIdMiddleware.HeaderName, out var cid) && cid is string s)
+        if (http.Items.TryGetValue(CorrelationIdMiddleware.HeaderName, out object? cid) && cid is string s)
             diagCtx.Set("CorrelationId", s);
 
         diagCtx.Set("RequestPath", http.Request.Path);

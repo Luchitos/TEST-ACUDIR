@@ -1,4 +1,5 @@
-﻿using Domain.Entidades;
+using Domain.Entidades;
+
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

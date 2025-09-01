@@ -1,13 +1,13 @@
-﻿using Application.Dtos;
+using Application.Dtos;
 using Application.Request.PersonaRequest;
 using Application.Services;
+
 using MediatR;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
+
 using System.ComponentModel.DataAnnotations;
-using System.Threading.Tasks;
 
 namespace Acudir.Test.Apis.Controllers
 {
@@ -43,7 +43,7 @@ namespace Acudir.Test.Apis.Controllers
         {
             try
             {
-                var request = new GetPersonaRequest
+                GetPersonaRequest request = new()
                 {
                     Persona = new PersonaDto
                     {
@@ -55,7 +55,7 @@ namespace Acudir.Test.Apis.Controllers
                         Profesion = profesion
                     }
                 };
-                var result = await _mediator.Send(request);
+                IEnumerable<PersonaDto> result = await _mediator.Send(request);
 
                 if (result == null || !result.Any())
                 {
@@ -87,7 +87,7 @@ namespace Acudir.Test.Apis.Controllers
         {
             try
             {
-                var addPersonaDto = new AddPersonaRequestDto
+                AddPersonaRequestDto addPersonaDto = new()
                 {
                     NombreCompleto = nombreCompleto,
                     Edad = edad,
@@ -96,7 +96,7 @@ namespace Acudir.Test.Apis.Controllers
                     Profesion = profesion
                 };
 
-                var result = await _servicePersona.AddPersonaAsync(addPersonaDto);
+                PersonaDto result = await _servicePersona.AddPersonaAsync(addPersonaDto);
                 return Ok(result);
             }
             catch (ValidationException ex)
@@ -128,7 +128,7 @@ namespace Acudir.Test.Apis.Controllers
         {
             try
             {
-                var updatePersonaDto = new UpdatePersonaRequestDto
+                UpdatePersonaRequestDto updatePersonaDto = new()
                 {
                     Id = id,
                     NombreCompleto = nombreCompleto,
@@ -138,7 +138,7 @@ namespace Acudir.Test.Apis.Controllers
                     Profesion = profesion
                 };
 
-                var result = await _servicePersona.UpdatePersonaAsync(updatePersonaDto);
+                PersonaDto? result = await _servicePersona.UpdatePersonaAsync(updatePersonaDto);
 
                 if (result == null)
                 {

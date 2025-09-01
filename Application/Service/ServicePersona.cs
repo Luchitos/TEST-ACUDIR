@@ -1,12 +1,11 @@
-﻿using Application.Dtos;
-using Application.Request.PersonaRequest;
+using Application.Dtos;
+
 using AutoMapper;
+
 using Domain.Entidades;
 using Domain.Interfaz;
-using System.Collections.Generic;
+
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Application.Services
 {
