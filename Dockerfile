@@ -1,29 +1,26 @@
+# build
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /app
 
-# Crear el archivo .env con las variables de entorno necesarias en el directorio Acudir.Test.Apis
-RUN echo "JWT_SECRET_KEY=${JWT_SECRET_KEY}" > .env
-
-# Copiar los archivos de cada proyecto y restaurar dependencias individualmente
 COPY Acudir.Test.Apis/*.csproj Acudir.Test.Apis/
-RUN dotnet restore Acudir.Test.Apis/Acudir.Test.Apis.csproj
-
 COPY Domain/*.csproj Domain/
-RUN dotnet restore Domain/Domain.csproj
-
 COPY Data/*.csproj Data/
-RUN dotnet restore Data/Data.csproj
-
 COPY Application/*.csproj Application/
-RUN dotnet restore Application/Application.csproj
+COPY Infrastructure/*.csproj Infrastructure/
 
-# Copiar el resto de los archivos y construir la aplicaci�n
+RUN dotnet restore Acudir.Test.Apis/Acudir.Test.Apis.csproj
+RUN dotnet restore Domain/Domain.csproj
+RUN dotnet restore Data/Data.csproj
+RUN dotnet restore Application/Application.csproj
+RUN dotnet restore Infrastructure/Infrastructure.csproj
+
 COPY . ./
 RUN dotnet publish Acudir.Test.Apis/Acudir.Test.Apis.csproj -c Release -o out
 
+# runtime
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/out ./
-
-
+ENV ASPNETCORE_URLS=http://+:5001
+EXPOSE 5001
 ENTRYPOINT ["dotnet", "Acudir.Test.Apis.dll"]

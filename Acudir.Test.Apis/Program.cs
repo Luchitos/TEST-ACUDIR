@@ -15,6 +15,9 @@ using dotenv.net;
 using Acudir.Test.Apis.Options;
 using Acudir.Test.Apis.Extensions;
 
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
+
 var builder = WebApplication.CreateBuilder(args);
 
 DotEnv.Load();
@@ -22,37 +25,6 @@ DotEnv.Load();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddAutoMapper(typeof(Mapper));
-
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Acudir.Test.Apis", Version = "v1" });
-
-    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    {
-        Description = "JWT Authorization header usando el esquema Bearer. Ej: \"Authorization: Bearer {token}\"",
-        Name = "Authorization",
-        In = ParameterLocation.Header,
-        Type = SecuritySchemeType.ApiKey,
-        Scheme = "Bearer"
-    });
-
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
-            },
-            Array.Empty<string>()
-        }
-    });
-
-    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-    if (File.Exists(xmlPath))
-        c.IncludeXmlComments(xmlPath);
-});
-
 builder.Services.AddMediatR(typeof(Application.Request.PersonaRequest.GetPersonaRequestHandler).Assembly);
 
 builder.Services
@@ -61,12 +33,31 @@ builder.Services
     .AddCheck<TestJsonHealthCheck>("testjson", tags: new[] { "ready" });
 
 builder.Services.AddInfrastructure(builder.Configuration);
-
 builder.Services.AddScoped<IServicePersona, ServicePersona>();
 
 builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection(JwtOptions.SectionName));
-
 builder.Services.AddJwtAuthentication(builder.Configuration);
+
+builder.Services.AddApiVersioning(options =>
+{
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+    options.ReportApiVersions = true;
+});
+builder.Services.AddVersionedApiExplorer(options =>
+{
+    options.GroupNameFormat = "'v'VVV"; // v1, v1.0
+    options.SubstituteApiVersionInUrl = true;
+});
+
+builder.Services.AddSwaggerGen(c =>
+{
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    if (File.Exists(xmlPath))
+        c.IncludeXmlComments(xmlPath);
+});
+builder.Services.ConfigureOptions<ConfigureSwaggerOptions>();
 
 builder.Host.UseSerilog((ctx, lc) =>
 {
@@ -76,7 +67,6 @@ builder.Host.UseSerilog((ctx, lc) =>
 
 var app = builder.Build();
 
-// ---------- Middlewares ----------
 app.UseMiddleware<CorrelationIdMiddleware>();
 
 app.UseSerilogRequestLogging(opts =>
@@ -93,10 +83,14 @@ app.UseSerilogRequestLogging(opts =>
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
+var provider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Acudir.Test.Apis v1");
+    foreach (var desc in provider.ApiVersionDescriptions)
+    {
+        c.SwaggerEndpoint($"/swagger/{desc.GroupName}/swagger.json", $"Acudir.Test.Apis {desc.GroupName.ToUpperInvariant()}");
+    }
 });
 
 app.Use(async (context, next) =>
@@ -113,7 +107,6 @@ app.MapHealthChecks("/health", new HealthCheckOptions
 {
     Predicate = r => r.Name == "self"
 });
-
 app.MapHealthChecks("/health/ready", new HealthCheckOptions
 {
     Predicate = r => r.Tags.Contains("ready"),
@@ -136,7 +129,6 @@ app.MapHealthChecks("/health/ready", new HealthCheckOptions
 });
 
 app.UseHttpsRedirection();
-
 app.UseAuthentication();
 app.UseAuthorization();
 

@@ -16,6 +16,9 @@ using System.Threading.Tasks;
 
 using Xunit;
 
+using TestController = Acudir.Test.Apis.Controllers.PersonasController;
+
+
 namespace UnitTest
 {
     public class TestControllerTests

@@ -12,24 +12,22 @@ using System.ComponentModel.DataAnnotations;
 namespace Acudir.Test.Apis.Controllers
 {
     [ApiController]
-    [Route("Personas")]
-    [Authorize]
-    public class TestController : ControllerBase
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/personas")]
+    public class PersonasController : ControllerBase
     {
         private readonly IMediator _mediator;
         private readonly IServicePersona _servicePersona;
 
-        public TestController(IMediator mediator, IServicePersona servicePersona)
+        public PersonasController(IMediator mediator, IServicePersona servicePersona)
         {
             _mediator = mediator;
             _servicePersona = servicePersona;
         }
 
-        #region GetPersonas
-        /// <summary>
-        /// Obtiene una lista de personas según los parámetros de la consulta. Si no hay parametros, trae la lista completa
-        /// </summary>
-        [HttpGet("GetPersonas")]
+        // GET /api/v1/personas
+        [HttpGet]
+        [AllowAnonymous]
         [ProducesResponseType(typeof(IEnumerable<PersonaDto>), 200)]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
@@ -43,7 +41,7 @@ namespace Acudir.Test.Apis.Controllers
         {
             try
             {
-                GetPersonaRequest request = new()
+                var request = new GetPersonaRequest
                 {
                     Persona = new PersonaDto
                     {
@@ -55,13 +53,9 @@ namespace Acudir.Test.Apis.Controllers
                         Profesion = profesion
                     }
                 };
-                IEnumerable<PersonaDto> result = await _mediator.Send(request);
-
+                var result = await _mediator.Send(request);
                 if (result == null || !result.Any())
-                {
                     return NotFound("No se encontraron personas con los datos proporcionados.");
-                }
-
                 return Ok(result);
             }
             catch (Exception ex)
@@ -69,13 +63,10 @@ namespace Acudir.Test.Apis.Controllers
                 return StatusCode(500, $"Error al obtener personas: {ex.Message}");
             }
         }
-        #endregion
 
-        #region AgregarPersona
-        /// <summary>
-        /// Agrega una nueva persona.
-        /// </summary>
-        [HttpPost("AgregarPersona")]
+        // POST /api/v1/personas
+        [HttpPost]
+        [Authorize]
         [ProducesResponseType(typeof(PersonaDto), 200)]
         [ProducesResponseType(500)]
         public async Task<IActionResult> Add(
@@ -87,7 +78,7 @@ namespace Acudir.Test.Apis.Controllers
         {
             try
             {
-                AddPersonaRequestDto addPersonaDto = new()
+                var addPersonaDto = new AddPersonaRequestDto
                 {
                     NombreCompleto = nombreCompleto,
                     Edad = edad,
@@ -95,8 +86,7 @@ namespace Acudir.Test.Apis.Controllers
                     Telefono = telefono,
                     Profesion = profesion
                 };
-
-                PersonaDto result = await _servicePersona.AddPersonaAsync(addPersonaDto);
+                var result = await _servicePersona.AddPersonaAsync(addPersonaDto);
                 return Ok(result);
             }
             catch (ValidationException ex)
@@ -108,13 +98,10 @@ namespace Acudir.Test.Apis.Controllers
                 return StatusCode(500, $"Error al agregar persona: {ex.Message}");
             }
         }
-        #endregion
 
-        #region ActualizarPersona
-        /// <summary>
-        /// Actualiza las propiedades de una persona existente dependiendo del valor de los parámetros. Los parámetros vacíos son ignorados.
-        /// </summary>
-        [HttpPut("ActualizarPersona")]
+        // PUT /api/v1/personas
+        [HttpPut]
+        [Authorize]
         [ProducesResponseType(typeof(PersonaDto), 200)]
         [ProducesResponseType(400)]
         [ProducesResponseType(500)]
@@ -128,7 +115,7 @@ namespace Acudir.Test.Apis.Controllers
         {
             try
             {
-                UpdatePersonaRequestDto updatePersonaDto = new()
+                var updatePersonaDto = new UpdatePersonaRequestDto
                 {
                     Id = id,
                     NombreCompleto = nombreCompleto,
@@ -137,14 +124,9 @@ namespace Acudir.Test.Apis.Controllers
                     Telefono = telefono,
                     Profesion = profesion
                 };
-
-                PersonaDto? result = await _servicePersona.UpdatePersonaAsync(updatePersonaDto);
-
+                var result = await _servicePersona.UpdatePersonaAsync(updatePersonaDto);
                 if (result == null)
-                {
                     return BadRequest("No se detectaron cambios.");
-                }
-
                 return Ok(result);
             }
             catch (ValidationException ex)
@@ -156,7 +138,5 @@ namespace Acudir.Test.Apis.Controllers
                 return StatusCode(500, $"Error al actualizar persona: {ex.Message}");
             }
         }
-        #endregion
     }
 }
-

@@ -1,14 +1,13 @@
-version: '3.8'
-
 services:
   acudirtservice:
-    image: acudirtservice:latest
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "5001:80"
+    env_file:
+      - .env 
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - JWT_SECRET_KEY=MySecureJwtKey12345678901234567890
-
+      - Jwt__Issuer=Acudir.Test.Dev
+      - Jwt__Audience=Acudir.Clients.Dev
+    ports:
+      - "5001:5001"
