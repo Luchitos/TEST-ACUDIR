@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Data.Repository
+namespace Infrastructure.Persistence
 {
     public class PersonaRepository : IPersonaRepository
     {

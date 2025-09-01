@@ -32,7 +32,7 @@ namespace UnitTest
             // Arrange
             var personas = new List<PersonaDto> { new PersonaDto { Id = 1, NombreCompleto = "John Doe" } };
             _mediatorMock.Setup(m => m.Send(It.IsAny<GetPersonaRequest>(), It.IsAny<CancellationToken>()))
-                         .ReturnsAsync(personas);
+                        .ReturnsAsync(personas);
 
             // Act
             var result = await _controller.GetAll(null, null, null, null, null, null);
@@ -48,7 +48,7 @@ namespace UnitTest
         {
             // Arrange
             _mediatorMock.Setup(m => m.Send(It.IsAny<GetPersonaRequest>(), It.IsAny<CancellationToken>()))
-                         .ReturnsAsync(new List<PersonaDto>());
+                        .ReturnsAsync(new List<PersonaDto>());
 
             // Act
             var result = await _controller.GetAll(null, null, null, null, null, null);
@@ -82,7 +82,7 @@ namespace UnitTest
                 Profesion = "Developer"
             };
             _servicePersonaMock.Setup(s => s.AddPersonaAsync(It.IsAny<AddPersonaRequestDto>()))
-                               .ReturnsAsync(persona);
+                            .ReturnsAsync(persona);
 
             // Act
             var result = await _controller.Add(addPersonaDto.NombreCompleto, addPersonaDto.Edad, addPersonaDto.Domicilio, addPersonaDto.Telefono, addPersonaDto.Profesion);
@@ -123,7 +123,7 @@ namespace UnitTest
                 Profesion = "Developer"
             };
             _servicePersonaMock.Setup(s => s.UpdatePersonaAsync(It.IsAny<UpdatePersonaRequestDto>()))
-                               .ReturnsAsync(persona);
+                            .ReturnsAsync(persona);
 
             // Act
             var result = await _controller.Update(updatePersonaDto.Id, updatePersonaDto.NombreCompleto, updatePersonaDto.Edad, updatePersonaDto.Domicilio, updatePersonaDto.Telefono, updatePersonaDto.Profesion);
@@ -153,7 +153,7 @@ namespace UnitTest
                 Profesion = "Developer"
             };
             _servicePersonaMock.Setup(s => s.UpdatePersonaAsync(It.IsAny<UpdatePersonaRequestDto>()))
-                               .ReturnsAsync((PersonaDto?)null);
+                            .ReturnsAsync((PersonaDto?)null);
 
             // Act
             var result = await _controller.Update(updatePersonaDto.Id, updatePersonaDto.NombreCompleto, updatePersonaDto.Edad, updatePersonaDto.Domicilio, updatePersonaDto.Telefono, updatePersonaDto.Profesion);

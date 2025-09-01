@@ -17,9 +17,12 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Acudir.Test.Apis\Acudir.Test.Apis.csproj" />
-    <ProjectReference Include="..\Domain\Domain.csproj" />
-  </ItemGroup>
+<ItemGroup>
+  <ProjectReference Include="..\Application\Application.csproj" />
+  <ProjectReference Include="..\Domain\Domain.csproj" />
+  <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+  <ProjectReference Include="..\Acudir.Test.Apis\Acudir.Test.Apis.csproj" />
+</ItemGroup>
+
 
 </Project>

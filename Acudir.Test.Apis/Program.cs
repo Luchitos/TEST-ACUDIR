@@ -9,7 +9,7 @@ using System.Reflection;
 using ServiceStack;
 using Application.Mapping;
 using Application.Services;
-using Data.Repository;
+using Infrastructure;
 using Acudir.Test.Apis.Middlewares;
 using Serilog;
 using Acudir.Test.Apis.Health;
@@ -70,7 +70,6 @@ builder.Services.AddSwaggerGen(c =>
     c.IncludeXmlComments(xmlPath);
 });
 
-builder.Services.AddSingleton<IPersonaRepository, PersonaRepository>();
 
 builder.Services.AddMediatR(typeof(Application.Request.PersonaRequest.GetPersonaRequestHandler).Assembly);
 
@@ -97,6 +96,8 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddHealthChecks()
     .AddCheck("self", () => HealthCheckResult.Healthy())
     .AddCheck<TestJsonHealthCheck>("testjson", tags: new[] { "ready" });
+
+builder.Services.AddInfrastructure(builder.Configuration);
 
 builder.Services.AddScoped<IServicePersona, ServicePersona>();
 

@@ -29,11 +29,11 @@
               "/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/Application.csproj": {
                 "projectPath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/Application.csproj"
               },
-              "/Users/luciano/Projects/challenge/TEST-ACUDIR/Data/Data.csproj": {
-                "projectPath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Data/Data.csproj"
-              },
               "/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/Domain.csproj": {
                 "projectPath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/Domain.csproj"
+              },
+              "/Users/luciano/Projects/challenge/TEST-ACUDIR/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Infrastructure/Infrastructure.csproj"
               }
             }
           }
@@ -77,6 +77,22 @@
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[7.0.2, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             },
             "ServiceStack.Interfaces": {
               "target": "Package",
@@ -215,85 +231,6 @@
         }
       }
     },
-    "/Users/luciano/Projects/challenge/TEST-ACUDIR/Data/Data.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Data/Data.csproj",
-        "projectName": "Data",
-        "projectPath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Data/Data.csproj",
-        "packagesPath": "/Users/luciano/.nuget/packages/",
-        "outputPath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Data/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/luciano/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/Domain.csproj": {
-                "projectPath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/Domain.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -369,6 +306,93 @@
         }
       }
     },
+    "/Users/luciano/Projects/challenge/TEST-ACUDIR/Infrastructure/Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Infrastructure/Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/luciano/.nuget/packages/",
+        "outputPath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/luciano/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/Domain.csproj": {
+                "projectPath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -394,8 +418,14 @@
               "/Users/luciano/Projects/challenge/TEST-ACUDIR/Acudir.Test.Apis/Acudir.Test.Apis.csproj": {
                 "projectPath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Acudir.Test.Apis/Acudir.Test.Apis.csproj"
               },
+              "/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/Application.csproj": {
+                "projectPath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Application/Application.csproj"
+              },
               "/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/Domain.csproj": {
                 "projectPath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/Domain.csproj"
+              },
+              "/Users/luciano/Projects/challenge/TEST-ACUDIR/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Infrastructure/Infrastructure.csproj"
               }
             }
           }
