@@ -22,7 +22,7 @@
 
 * Necesidad de más código repetitivo para mantener la separación de responsabilidades.
 
-### ⚡ Mejoras posibles
+### Mejoras posibles
 
 * Incorporar ValueObjects y reglas de negocio inmutables.
 * Aplicar DDD si el dominio lo justifica.
