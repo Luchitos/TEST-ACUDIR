@@ -1,3 +1,4 @@
+using Application.Common.Pagination;
 using Application.Dtos;
 using Application.Personas.Commands.CreatePersona;
 using Application.Personas.Commands.DeletePersona;
@@ -31,20 +32,24 @@ namespace Acudir.Test.Apis.Controllers
             _mediator = mediator;
         }
 
-        /// <summary>Obtiene todas las personas filtrando por campos opcionales.</summary>
+        /// <summary>Obtiene todas las personas con filtros y paginación.</summary>
         [HttpGet]
         [AllowAnonymous]
-        [ProducesResponseType(typeof(IEnumerable<PersonaDto>), 200)]
-        [ProducesResponseType(404)]
-        public async Task<IActionResult> Get([FromQuery] GetPersonasQuery query)
+        [ProducesResponseType(typeof(PagedResult<PersonaDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> Get([FromQuery] GetPersonasQuery query, CancellationToken ct = default)
         {
-            IEnumerable<PersonaDto> result = await _mediator.Send(query).ConfigureAwait(false);
+            var page = await _mediator.Send(query, ct).ConfigureAwait(false);
 
-            // devolver 404 si no hay resultados (lo que tu test espera)
-            if (result is null || !result.Any())
-                return NotFound("No se encontraron personas con los datos proporcionados.");
+            if (page.TotalItems == 0)
+                return NotFound(new ProblemDetails
+                {
+                    Title = "Sin resultados",
+                    Detail = "No se encontraron personas con los datos proporcionados.",
+                    Status = StatusCodes.Status404NotFound
+                });
 
-            return Ok(result);
+            return Ok(page);
         }
 
 
@@ -52,7 +57,7 @@ namespace Acudir.Test.Apis.Controllers
         [HttpGet("{id:int}")]
         [ProducesResponseType(typeof(PersonaDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<IActionResult> GetById(int id, CancellationToken ct = default)
         {
             var result = await _mediator.Send(new GetPersonaByIdQuery(id));
             return result is null
@@ -68,7 +73,7 @@ namespace Acudir.Test.Apis.Controllers
         /// <summary>Agrega una nueva persona.</summary>
         [HttpPost]
         [ProducesResponseType(typeof(int), StatusCodes.Status201Created)]
-        public async Task<IActionResult> Post([FromBody] CreatePersonaCommand command)
+        public async Task<IActionResult> Post([FromBody] CreatePersonaCommand command, CancellationToken ct = default)
         {
             var id = await _mediator.Send(command);
             return CreatedAtAction(nameof(GetById), new { id }, id);
@@ -79,7 +84,7 @@ namespace Acudir.Test.Apis.Controllers
         [ProducesResponseType(typeof(PersonaDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> Put([FromBody] UpdatePersonaCommand command)
+        public async Task<IActionResult> Put([FromBody] UpdatePersonaCommand command, CancellationToken ct = default)
         {
             var result = await _mediator.Send(command);
             return result is null
@@ -96,7 +101,7 @@ namespace Acudir.Test.Apis.Controllers
         [HttpDelete("{id:int}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id, CancellationToken ct = default)
         {
             var result = await _mediator.Send(new DeletePersonaCommand(id));
             return !result

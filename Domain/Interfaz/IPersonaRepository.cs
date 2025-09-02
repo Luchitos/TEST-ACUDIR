@@ -7,10 +7,10 @@ namespace Domain.Interfaz
 {
     public interface IPersonaRepository
     {
-        Task<Persona?> GetByIdAsync(int id);
-        Task<IEnumerable<Persona>> GetAllAsync();
-        Task AddAsync(Persona persona);
-        Task UpdateAsync(Persona persona);
+        Task<Persona?> GetByIdAsync(int id, CancellationToken ct = default);
+        Task<IEnumerable<Persona>> GetAllAsync(CancellationToken ct = default);
+        Task AddAsync(Persona persona, CancellationToken ct = default);
+        Task UpdateAsync(Persona persona, CancellationToken ct = default);
     }
 }
 

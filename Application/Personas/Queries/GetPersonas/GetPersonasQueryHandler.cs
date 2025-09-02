@@ -1,44 +1,57 @@
+using Application.Common.Pagination;
 using Application.Dtos;
+using Application.Personas.Specifications;
 
 using AutoMapper;
+using AutoMapper.QueryableExtensions;
 
 using Domain.Interfaz;
 
 using MediatR;
 
-namespace Application.Personas.Queries.GetPersonas
+namespace Application.Personas.Queries.GetPersonas;
+
+public sealed class GetPersonasQueryHandler : IRequestHandler<GetPersonasQuery, PagedResult<PersonaDto>>
 {
-    public class GetPersonasQueryHandler : IRequestHandler<GetPersonasQuery, IEnumerable<PersonaDto>>
+    private readonly IPersonaRepository _repo;
+    private readonly IMapper _mapper;
+
+    public GetPersonasQueryHandler(IPersonaRepository repo, IMapper mapper)
     {
-        private readonly IPersonaRepository _personaRepository;
-        private readonly IMapper _mapper;
+        _repo = repo;
+        _mapper = mapper;
+    }
 
-        public GetPersonasQueryHandler(IPersonaRepository personaRepository, IMapper mapper)
-        {
-            _personaRepository = personaRepository;
-            _mapper = mapper;
-        }
+    public async Task<PagedResult<PersonaDto>> Handle(GetPersonasQuery request, CancellationToken ct)
+    {
+        // El repo trae todo desde Test.json. Aplicamos spec en memoria (IQueryable).
+        var personas = await _repo.GetAllAsync(ct); // List<Persona>
+        var queryable = personas.AsQueryable();
 
-        public async Task<IEnumerable<PersonaDto>> Handle(GetPersonasQuery request, CancellationToken cancellationToken)
-        {
-            var personas = await _personaRepository.GetAllAsync();
+        var spec = new PersonaByFiltersSpec(
+            request.Nombre, request.Edad, request.MinEdad, request.MaxEdad,
+            request.Domicilio, request.Telefono, request.Profesion,
+            request.SortBy, request.SortDir, request.Page, request.Size);
 
-            if (!string.IsNullOrEmpty(request.NombreCompleto))
-                personas = personas.Where(p => p.NombreCompleto.Contains(request.NombreCompleto, StringComparison.OrdinalIgnoreCase));
+        var filteredSorted = spec.ApplyFiltersAndSort(queryable);
+        var total = filteredSorted.Count();
 
-            if (request.Edad.HasValue)
-                personas = personas.Where(p => p.Edad == request.Edad.Value);
+        var pageItems = spec.ApplyPaging(filteredSorted).ToList();
 
-            if (!string.IsNullOrEmpty(request.Domicilio))
-                personas = personas.Where(p => p.Domicilio.Contains(request.Domicilio, StringComparison.OrdinalIgnoreCase));
+        var dtoItems = pageItems
+            .Select(p => _mapper.Map<PersonaDto>(p))
+            .ToList();
 
-            if (!string.IsNullOrEmpty(request.Telefono))
-                personas = personas.Where(p => p.Telefono.Contains(request.Telefono, StringComparison.OrdinalIgnoreCase));
+        var totalPages = (int)Math.Ceiling(total / (double)request.Size);
 
-            if (!string.IsNullOrEmpty(request.Profesion))
-                personas = personas.Where(p => p.Profesion.Contains(request.Profesion, StringComparison.OrdinalIgnoreCase));
-
-            return _mapper.Map<IEnumerable<PersonaDto>>(personas);
-        }
+        return new PagedResult<PersonaDto>(
+            dtoItems,
+            request.Page,
+            request.Size,
+            total,
+            totalPages,
+            request.SortBy,
+            request.SortDir
+        );
     }
 }
