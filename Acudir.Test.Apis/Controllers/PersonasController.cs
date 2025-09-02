@@ -1,142 +1,113 @@
 using Application.Dtos;
-using Application.Request.PersonaRequest;
-using Application.Services;
+using Application.Personas.Commands.CreatePersona;
+using Application.Personas.Commands.DeletePersona;
+using Application.Personas.Commands.UpdatePersona;
+using Application.Personas.Queries.GetPersonaById;
+using Application.Personas.Queries.GetPersonas;
 
 using MediatR;
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-using System.ComponentModel.DataAnnotations;
-
 namespace Acudir.Test.Apis.Controllers
 {
+    /// <summary>
+    /// Controlador de gestión de personas.
+    /// </summary>
+    /// <remarks>
+    /// Todas las rutas están versionadas bajo /api/v1/personas.
+    /// Requiere autorización JWT.
+    /// </remarks>
     [ApiController]
-    [ApiVersion("1.0")]
-    [Route("api/v{version:apiVersion}/personas")]
+    [Authorize]
+    [Route("api/v1/[controller]")]
     public class PersonasController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly IServicePersona _servicePersona;
 
-        public PersonasController(IMediator mediator, IServicePersona servicePersona)
+        public PersonasController(IMediator mediator)
         {
             _mediator = mediator;
-            _servicePersona = servicePersona;
         }
 
-        // GET /api/v1/personas
+        /// <summary>Obtiene todas las personas filtrando por campos opcionales.</summary>
         [HttpGet]
         [AllowAnonymous]
         [ProducesResponseType(typeof(IEnumerable<PersonaDto>), 200)]
         [ProducesResponseType(404)]
-        [ProducesResponseType(500)]
-        public async Task<IActionResult> GetAll(
-            [FromQuery] int? id,
-            [FromQuery] string? nombre,
-            [FromQuery] int? edad,
-            [FromQuery] string? domicilio,
-            [FromQuery] string? telefono,
-            [FromQuery] string? profesion)
+        public async Task<IActionResult> Get([FromQuery] GetPersonasQuery query)
         {
-            try
-            {
-                var request = new GetPersonaRequest
-                {
-                    Persona = new PersonaDto
-                    {
-                        Id = id ?? 0,
-                        NombreCompleto = nombre,
-                        Edad = edad ?? 0,
-                        Domicilio = domicilio,
-                        Telefono = telefono,
-                        Profesion = profesion
-                    }
-                };
-                var result = await _mediator.Send(request);
-                if (result == null || !result.Any())
-                    return NotFound("No se encontraron personas con los datos proporcionados.");
-                return Ok(result);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Error al obtener personas: {ex.Message}");
-            }
+            IEnumerable<PersonaDto> result = await _mediator.Send(query).ConfigureAwait(false);
+
+            // devolver 404 si no hay resultados (lo que tu test espera)
+            if (result is null || !result.Any())
+                return NotFound("No se encontraron personas con los datos proporcionados.");
+
+            return Ok(result);
         }
 
-        // POST /api/v1/personas
+
+        /// <summary>Obtiene una persona por ID.</summary>
+        [HttpGet("{id:int}")]
+        [ProducesResponseType(typeof(PersonaDto), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var result = await _mediator.Send(new GetPersonaByIdQuery(id));
+            return result is null
+                ? NotFound(new ProblemDetails
+                {
+                    Title = "Persona no encontrada",
+                    Detail = $"No existe una persona con ID = {id}",
+                    Status = StatusCodes.Status404NotFound
+                })
+                : Ok(result);
+        }
+
+        /// <summary>Agrega una nueva persona.</summary>
         [HttpPost]
-        [Authorize]
-        [ProducesResponseType(typeof(PersonaDto), 200)]
-        [ProducesResponseType(500)]
-        public async Task<IActionResult> Add(
-            [FromQuery] string nombreCompleto,
-            [FromQuery] int edad,
-            [FromQuery] string domicilio,
-            [FromQuery] string telefono,
-            [FromQuery] string profesion)
+        [ProducesResponseType(typeof(int), StatusCodes.Status201Created)]
+        public async Task<IActionResult> Post([FromBody] CreatePersonaCommand command)
         {
-            try
-            {
-                var addPersonaDto = new AddPersonaRequestDto
-                {
-                    NombreCompleto = nombreCompleto,
-                    Edad = edad,
-                    Domicilio = domicilio,
-                    Telefono = telefono,
-                    Profesion = profesion
-                };
-                var result = await _servicePersona.AddPersonaAsync(addPersonaDto);
-                return Ok(result);
-            }
-            catch (ValidationException ex)
-            {
-                return BadRequest(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Error al agregar persona: {ex.Message}");
-            }
+            var id = await _mediator.Send(command);
+            return CreatedAtAction(nameof(GetById), new { id }, id);
         }
 
-        // PUT /api/v1/personas
+        /// <summary>Actualiza una persona existente.</summary>
         [HttpPut]
-        [Authorize]
-        [ProducesResponseType(typeof(PersonaDto), 200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(500)]
-        public async Task<IActionResult> Update(
-            [FromQuery] int id,
-            [FromQuery] string? nombreCompleto,
-            [FromQuery] int? edad,
-            [FromQuery] string? domicilio,
-            [FromQuery] string? telefono,
-            [FromQuery] string? profesion)
+        [ProducesResponseType(typeof(PersonaDto), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> Put([FromBody] UpdatePersonaCommand command)
         {
-            try
-            {
-                var updatePersonaDto = new UpdatePersonaRequestDto
+            var result = await _mediator.Send(command);
+            return result is null
+                ? NotFound(new ProblemDetails
                 {
-                    Id = id,
-                    NombreCompleto = nombreCompleto,
-                    Edad = edad,
-                    Domicilio = domicilio,
-                    Telefono = telefono,
-                    Profesion = profesion
-                };
-                var result = await _servicePersona.UpdatePersonaAsync(updatePersonaDto);
-                if (result == null)
-                    return BadRequest("No se detectaron cambios.");
-                return Ok(result);
-            }
-            catch (ValidationException ex)
-            {
-                return BadRequest(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Error al actualizar persona: {ex.Message}");
-            }
+                    Title = "Persona no encontrada",
+                    Detail = $"No se encontró la persona con ID = {command.Id}",
+                    Status = StatusCodes.Status404NotFound
+                })
+                : Ok(result);
+        }
+
+        /// <summary>Elimina una persona por ID.</summary>
+        [HttpDelete("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var result = await _mediator.Send(new DeletePersonaCommand(id));
+            return !result
+                ? NotFound(new ProblemDetails
+                {
+                    Title = "Persona no encontrada",
+                    Detail = $"No existe una persona con ID = {id}",
+                    Status = StatusCodes.Status404NotFound
+                })
+                : NoContent();
         }
     }
+
 }

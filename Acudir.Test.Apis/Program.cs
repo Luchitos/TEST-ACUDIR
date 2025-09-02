@@ -2,7 +2,6 @@ using MediatR;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 using Application.Mapping;
-using Application.Services;
 using Infrastructure;
 using Acudir.Test.Apis.Middlewares;
 using Serilog;
@@ -18,22 +17,30 @@ using Acudir.Test.Apis.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
+using Application.Personas.Commands.CreatePersona;
+using Application.Common.Behaviors;
+using FluentValidation;
+using Application.Personas.Validators;
+
 var builder = WebApplication.CreateBuilder(args);
 
 DotEnv.Load();
 
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<CreatePersonaCommand>());
+builder.Services.AddValidatorsFromAssemblyContaining<CreatePersonaCommandValidator>();
+builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddAutoMapper(typeof(Mapper));
-builder.Services.AddMediatR(typeof(Application.Request.PersonaRequest.GetPersonaRequestHandler).Assembly);
 
 builder.Services
     .AddHealthChecks()
     .AddCheck("self", () => HealthCheckResult.Healthy())
     .AddCheck<TestJsonHealthCheck>("testjson", tags: new[] { "ready" });
+builder.Services.AddValidatorsFromAssemblyContaining<CreatePersonaCommandValidator>();
+builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 
 builder.Services.AddInfrastructure(builder.Configuration);
-builder.Services.AddScoped<IServicePersona, ServicePersona>();
 
 builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection(JwtOptions.SectionName));
 builder.Services.AddJwtAuthentication(builder.Configuration);

@@ -10,9 +10,7 @@ namespace Application.Mapping
     {
         public Mapper()
         {
-            CreateMap<AddPersonaRequestDto, Persona>();
-            CreateMap<UpdatePersonaRequestDto, Persona>();
-            CreateMap<Persona, PersonaDto>();
+            CreateMap<Persona, PersonaDto>().ReverseMap();
         }
     }
 }

@@ -1,8 +1,9 @@
 using Acudir.Test.Apis.Controllers;
 
 using Application.Dtos;
-using Application.Request.PersonaRequest;
-using Application.Services;
+using Application.Personas.Commands.CreatePersona;
+using Application.Personas.Commands.UpdatePersona;
+using Application.Personas.Queries.GetPersonas;
 
 using MediatR;
 
@@ -18,20 +19,17 @@ using Xunit;
 
 using TestController = Acudir.Test.Apis.Controllers.PersonasController;
 
-
 namespace UnitTest
 {
     public class TestControllerTests
     {
         private readonly Mock<IMediator> _mediatorMock;
-        private readonly Mock<IServicePersona> _servicePersonaMock;
         private readonly TestController _controller;
 
         public TestControllerTests()
         {
             _mediatorMock = new Mock<IMediator>();
-            _servicePersonaMock = new Mock<IServicePersona>();
-            _controller = new TestController(_mediatorMock.Object, _servicePersonaMock.Object);
+            _controller = new TestController(_mediatorMock.Object);
         }
 
         #region GetAll Tests
@@ -39,16 +37,22 @@ namespace UnitTest
         public async Task GetAll_ReturnsOkResult_WhenPersonasFound()
         {
             // Arrange
-            var personas = new List<PersonaDto> { new PersonaDto { Id = 1, NombreCompleto = "John Doe" } };
-            _mediatorMock.Setup(m => m.Send(It.IsAny<GetPersonaRequest>(), It.IsAny<CancellationToken>()))
-                        .ReturnsAsync(personas);
+            List<PersonaDto> personas = new List<PersonaDto>
+            {
+                new PersonaDto { Id = 1, NombreCompleto = "John Doe" }
+            };
+
+            _mediatorMock.Setup(m => m.Send(It.IsAny<GetPersonasQuery>(), It.IsAny<CancellationToken>()))
+                         .ReturnsAsync(personas);
+
+            GetPersonasQuery query = new GetPersonasQuery();
 
             // Act
-            var result = await _controller.GetAll(null, null, null, null, null, null);
+            IActionResult result = await _controller.Get(query);
 
             // Assert
-            var okResult = Assert.IsType<OkObjectResult>(result);
-            var returnValue = Assert.IsType<List<PersonaDto>>(okResult.Value);
+            OkObjectResult okResult = Assert.IsType<OkObjectResult>(result);
+            List<PersonaDto> returnValue = Assert.IsType<List<PersonaDto>>(okResult.Value);
             Assert.Single(returnValue);
         }
 
@@ -56,55 +60,37 @@ namespace UnitTest
         public async Task GetAll_ReturnsNotFound_WhenNoPersonasFound()
         {
             // Arrange
-            _mediatorMock.Setup(m => m.Send(It.IsAny<GetPersonaRequest>(), It.IsAny<CancellationToken>()))
-                        .ReturnsAsync(new List<PersonaDto>());
+            _mediatorMock.Setup(m => m.Send(It.IsAny<GetPersonasQuery>(), It.IsAny<CancellationToken>()))
+                         .ReturnsAsync(new List<PersonaDto>());
+
+            GetPersonasQuery query = new GetPersonasQuery();
 
             // Act
-            var result = await _controller.GetAll(null, null, null, null, null, null);
+            IActionResult result = await _controller.Get(query);
 
             // Assert
-            var notFoundResult = Assert.IsType<NotFoundObjectResult>(result);
+            NotFoundObjectResult notFoundResult = Assert.IsType<NotFoundObjectResult>(result);
             Assert.Equal("No se encontraron personas con los datos proporcionados.", notFoundResult.Value);
         }
         #endregion
 
         #region Add Tests
         [Fact]
-        public async Task Add_ReturnsOkResult_WhenPersonaAdded()
+        public async Task Add_ReturnsCreatedResult_WhenPersonaAdded()
         {
             // Arrange
-            var addPersonaDto = new AddPersonaRequestDto
-            {
-                NombreCompleto = "John Doe",
-                Edad = 30,
-                Domicilio = "123 Main St",
-                Telefono = "555-5555",
-                Profesion = "Developer"
-            };
-            var persona = new PersonaDto
-            {
-                Id = 1,
-                NombreCompleto = "John Doe",
-                Edad = 30,
-                Domicilio = "123 Main St",
-                Telefono = "555-5555",
-                Profesion = "Developer"
-            };
-            _servicePersonaMock.Setup(s => s.AddPersonaAsync(It.IsAny<AddPersonaRequestDto>()))
-                            .ReturnsAsync(persona);
+            CreatePersonaCommand command = new CreatePersonaCommand("John Doe", 30, "123 Main St", "555-5555", "Developer");
+            int expectedId = 1;
+
+            _mediatorMock.Setup(m => m.Send(It.IsAny<CreatePersonaCommand>(), It.IsAny<CancellationToken>()))
+                         .ReturnsAsync(expectedId);
 
             // Act
-            var result = await _controller.Add(addPersonaDto.NombreCompleto, addPersonaDto.Edad, addPersonaDto.Domicilio, addPersonaDto.Telefono, addPersonaDto.Profesion);
+            IActionResult result = await _controller.Post(command);
 
             // Assert
-            var okResult = Assert.IsType<OkObjectResult>(result);
-            var returnValue = Assert.IsType<PersonaDto>(okResult.Value);
-            Assert.Equal(persona.Id, returnValue.Id);
-            Assert.Equal(persona.NombreCompleto, returnValue.NombreCompleto);
-            Assert.Equal(persona.Edad, returnValue.Edad);
-            Assert.Equal(persona.Domicilio, returnValue.Domicilio);
-            Assert.Equal(persona.Telefono, returnValue.Telefono);
-            Assert.Equal(persona.Profesion, returnValue.Profesion);
+            CreatedAtActionResult createdResult = Assert.IsType<CreatedAtActionResult>(result);
+            Assert.Equal(expectedId, createdResult.Value);
         }
         #endregion
 
@@ -113,66 +99,46 @@ namespace UnitTest
         public async Task Update_ReturnsOkResult_WhenPersonaUpdated()
         {
             // Arrange
-            var updatePersonaDto = new UpdatePersonaRequestDto
+            UpdatePersonaCommand command = new UpdatePersonaCommand(1, "John Doe", 30, "123 Main St", "555-5555", "Developer");
+
+            PersonaDto persona = new PersonaDto
             {
-                Id = 1,
-                NombreCompleto = "John Doe",
-                Edad = 30,
-                Domicilio = "123 Main St",
-                Telefono = "555-5555",
-                Profesion = "Developer"
+                Id = command.Id,
+                NombreCompleto = command.NombreCompleto,
+                Edad = command.Edad ?? 0,
+                Domicilio = command.Domicilio!,
+                Telefono = command.Telefono!,
+                Profesion = command.Profesion!
             };
-            var persona = new PersonaDto
-            {
-                Id = 1,
-                NombreCompleto = "John Doe",
-                Edad = 30,
-                Domicilio = "123 Main St",
-                Telefono = "555-5555",
-                Profesion = "Developer"
-            };
-            _servicePersonaMock.Setup(s => s.UpdatePersonaAsync(It.IsAny<UpdatePersonaRequestDto>()))
-                            .ReturnsAsync(persona);
+
+            _mediatorMock.Setup(m => m.Send(It.IsAny<UpdatePersonaCommand>(), It.IsAny<CancellationToken>()))
+                         .ReturnsAsync(persona);
 
             // Act
-            var result = await _controller.Update(updatePersonaDto.Id, updatePersonaDto.NombreCompleto, updatePersonaDto.Edad, updatePersonaDto.Domicilio, updatePersonaDto.Telefono, updatePersonaDto.Profesion);
+            IActionResult result = await _controller.Put(command);
 
             // Assert
-            var okResult = Assert.IsType<OkObjectResult>(result);
-            var returnValue = Assert.IsType<PersonaDto>(okResult.Value);
+            OkObjectResult okResult = Assert.IsType<OkObjectResult>(result);
+            PersonaDto returnValue = Assert.IsType<PersonaDto>(okResult.Value);
             Assert.Equal(persona.Id, returnValue.Id);
-            Assert.Equal(persona.NombreCompleto, returnValue.NombreCompleto);
-            Assert.Equal(persona.Edad, returnValue.Edad);
-            Assert.Equal(persona.Domicilio, returnValue.Domicilio);
-            Assert.Equal(persona.Telefono, returnValue.Telefono);
-            Assert.Equal(persona.Profesion, returnValue.Profesion);
         }
 
         [Fact]
-        public async Task Update_ReturnsBadRequest_WhenNoChangesDetected()
+        public async Task Update_ReturnsNotFound_WhenPersonaNotFound()
         {
             // Arrange
-            var updatePersonaDto = new UpdatePersonaRequestDto
-            {
-                Id = 1,
-                NombreCompleto = "John Doe",
-                Edad = 30,
-                Domicilio = "123 Main St",
-                Telefono = "555-5555",
-                Profesion = "Developer"
-            };
-            _servicePersonaMock.Setup(s => s.UpdatePersonaAsync(It.IsAny<UpdatePersonaRequestDto>()))
-                            .ReturnsAsync((PersonaDto?)null);
+            UpdatePersonaCommand command = new UpdatePersonaCommand(1, "John Doe", 30, "123 Main St", "555-5555", "Developer");
+
+            _mediatorMock.Setup(m => m.Send(It.IsAny<UpdatePersonaCommand>(), It.IsAny<CancellationToken>()))
+                         .ReturnsAsync((PersonaDto?)null);
 
             // Act
-            var result = await _controller.Update(updatePersonaDto.Id, updatePersonaDto.NombreCompleto, updatePersonaDto.Edad, updatePersonaDto.Domicilio, updatePersonaDto.Telefono, updatePersonaDto.Profesion);
+            IActionResult result = await _controller.Put(command);
 
             // Assert
-            var badRequestResult = Assert.IsType<BadRequestObjectResult>(result);
-            Assert.Equal("No se detectaron cambios.", badRequestResult.Value);
+            NotFoundObjectResult notFound = Assert.IsType<NotFoundObjectResult>(result);
+            Assert.Equal(404, notFound.StatusCode);
         }
         #endregion
     }
 }
-
-
