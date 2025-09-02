@@ -20,7 +20,7 @@ namespace Application.Personas.Commands.DeletePersona
                 return false;
 
             // Idealmente usarías un DeleteAsync(persona) si el repo lo expone.
-            // Como no está en tu IPersonaRepository, podríamos agregarlo en el futuro.
+            // Como no esta en IPersonaRepository, se podrìa agregarlo en el futuro.
             persona.NombreCompleto = "[ELIMINADO]";
             await _personaRepository.UpdateAsync(persona);
             return true;

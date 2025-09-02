@@ -147,7 +147,6 @@ C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/ref/U
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.deps.json
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.runtimeconfig.json
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/appsettings.Development.json
-/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis.staticwebassets.endpoints.json
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Acudir.Test.Apis
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.runner.visualstudio.testadapter.dll
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/xunit.runner.reporters.netcoreapp10.dll
@@ -165,8 +164,10 @@ C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/ref/U
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/FluentValidation.dll
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/FluentValidation.DependencyInjectionExtensions.dll
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/MediatR.dll
-/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/MediatR.Contracts.dll
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.AspNetCore.Mvc.Versioning.dll
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -303,8 +304,7 @@ C:/Users/Micaela Sielas/source/repos/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/ref/U
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.AssemblyInfoInputs.cache
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.AssemblyInfo.cs
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.csproj.CoreCompileInputs.cache
-/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.sourcelink.json
-/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.csproj.Up2Date
+/Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.csproj.CopyComplete
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.dll
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/refint/UnitTest.dll
 /Users/luciano/Projects/challenge/TEST-ACUDIR/UnitTest/obj/Debug/net6.0/UnitTest.pdb

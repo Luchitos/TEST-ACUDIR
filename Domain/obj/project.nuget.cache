@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D1liW3CYx8k=",
+  "dgSpecHash": "aNxs9qdHKC8V/giYLlgiqkFVDVvAgiTc943UysUWrtldP7Ee7T2e75FUBqUIUUgc374/FAhZo79Fa5G5Pvzblw==",
   "success": true,
   "projectFilePath": "/Users/luciano/Projects/challenge/TEST-ACUDIR/Domain/Domain.csproj",
-  "expectedPackageFiles": [
-    "/Users/luciano/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512",
-    "/Users/luciano/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "/Users/luciano/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
