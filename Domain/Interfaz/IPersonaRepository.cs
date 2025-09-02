@@ -1,8 +1,5 @@
 using Domain.Entidades;
 
-using System.Collections.Generic;
-using System.Threading.Tasks;
-
 namespace Domain.Interfaz
 {
     public interface IPersonaRepository

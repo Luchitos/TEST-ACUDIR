@@ -21,8 +21,8 @@ namespace Acudir.Test.Apis.Controllers
     /// Requiere autorización JWT.
     /// </remarks>
     [ApiController]
-    [Authorize]
-    [Route("api/v1/[controller]")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class PersonasController : ControllerBase
     {
         private readonly IMediator _mediator;

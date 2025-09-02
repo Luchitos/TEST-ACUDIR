@@ -4,13 +4,11 @@ WORKDIR /app
 
 COPY Acudir.Test.Apis/*.csproj Acudir.Test.Apis/
 COPY Domain/*.csproj Domain/
-COPY Data/*.csproj Data/
 COPY Application/*.csproj Application/
 COPY Infrastructure/*.csproj Infrastructure/
 
 RUN dotnet restore Acudir.Test.Apis/Acudir.Test.Apis.csproj
 RUN dotnet restore Domain/Domain.csproj
-RUN dotnet restore Data/Data.csproj
 RUN dotnet restore Application/Application.csproj
 RUN dotnet restore Infrastructure/Infrastructure.csproj
 

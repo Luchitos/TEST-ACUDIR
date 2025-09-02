@@ -18,7 +18,8 @@ namespace Acudir.Test.Apis.Controllers
     [AllowAnonymous]
     [Consumes("application/json")]
     [Produces("application/json")]
-    [Route("api/v1/[controller]")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public sealed class AuthController : ControllerBase
     {
         private readonly IConfiguration _configuration;

@@ -10,7 +10,6 @@ namespace Acudir.Test.Apis.Contracts.Auth
         /// <summary>Tipo de token (siempre "Bearer").</summary>
         public string TokenType { get; set; } = "Bearer";
 
-
         public DateTime ExpiresAt { get; set; }
     }
 }
