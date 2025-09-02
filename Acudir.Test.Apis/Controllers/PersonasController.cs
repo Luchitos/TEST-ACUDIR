@@ -34,7 +34,6 @@ namespace Acudir.Test.Apis.Controllers
 
         /// <summary>Obtiene todas las personas con filtros y paginación.</summary>
         [HttpGet]
-        [AllowAnonymous]
         [ProducesResponseType(typeof(PagedResult<PersonaDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Get([FromQuery] GetPersonasQuery query, CancellationToken ct = default)
@@ -73,6 +72,8 @@ namespace Acudir.Test.Apis.Controllers
         /// <summary>Agrega una nueva persona.</summary>
         [HttpPost]
         [ProducesResponseType(typeof(int), StatusCodes.Status201Created)]
+        [Produces("application/json")]
+        [Consumes("application/json")]
         public async Task<IActionResult> Post([FromBody] CreatePersonaCommand command, CancellationToken ct = default)
         {
             var id = await _mediator.Send(command);

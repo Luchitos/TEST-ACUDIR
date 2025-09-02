@@ -1,4 +1,5 @@
 using Application.Dtos;
+using Application.Personas.Commands.CreatePersona;
 
 using AutoMapper;
 
@@ -11,6 +12,7 @@ namespace Application.Mapping
         public Mapper()
         {
             CreateMap<Persona, PersonaDto>().ReverseMap();
+            CreateMap<CreatePersonaCommand, Persona>();
         }
     }
 }
