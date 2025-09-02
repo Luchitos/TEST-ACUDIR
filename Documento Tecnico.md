@@ -2,7 +2,7 @@
 
 ##  1. Capa Domain (Dominios y Contratos)
 
-### ✅ Implementado
+### Implementado
 
 * Entidad `Persona` con propiedades básicas.
 * Interfaz `IPersonaRepository` como contrato de persistencia.
@@ -12,13 +12,13 @@
 * Seguimos el principio **Dependency Inversion** del SOLID: las dependencias están definidas por interfaces, no por implementaciones.
 * El dominio es la capa más pura y estable de la arquitectura, sin dependencias de infraestructura o frameworks.
 
-### ⚡ Pros
+### Pros
 
 * Bajo acoplamiento.
 * Alta reusabilidad.
 * Independiente de tecnología (testable, portable).
 
-### ❌ Contras
+### Contras
 
 * Necesidad de más código repetitivo para mantener la separación de responsabilidades.
 
